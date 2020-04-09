@@ -1,0 +1,442 @@
+a, a:visited {
+    text-decoration: none;
+    color: #333;
+}
+ul{
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+a, a:visited {
+    text-decoration: none;
+    color: #333;
+}
+li, ol, ul {
+    list-style: none outside none;
+}
+a:link{ text-decoration: none;}
+/* 顶部固定搜索栏 */
+.DBgdXXX{
+    width: 100%;height:130px;
+    background: #fff;position: fixed;
+    z-index: 100;
+}
+.DBgdshx{
+    width: 100%;height:45px;
+    background: #fff;position: relative;
+    border-bottom:1px solid #f5f5f5; 
+}
+.FANx{padding-top:12px; 
+    display: block;width: 40px;height: 100%;
+    float: left;text-align: center;
+}
+.FANx span{font-size: 20px;color:#686868;}
+
+.DBgdshx-sx{
+    width: 80%;height: 30px;background: #f7f7f7;
+    float: left;margin-left: 5px;margin-top:7px;
+    border-radius:15px; 
+}
+.DBgdshx-sx i{
+    width: 18px;
+    height: 15px;
+    background: url(../imges/JLT.png) no-repeat;
+    background-position: -80px 0;
+    background-size: 200px;
+    margin-left: 10px;
+    margin: 8px 0 0 15px;
+    position: relative;
+    z-index: 1;
+    float: left;
+}
+.DBgdshx-sx input{
+    width: 85%;height: 100%;margin-left: 5px;
+    border: 0;margin-top:8px;
+    background: 0 0;
+    font-size: 12px;
+    color: #232326;
+    padding-left: 5px;
+    box-sizing: border-box;
+    -webkit-box-flex: 1;
+    vertical-align: middle;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 30px;
+    font-family: inherit;
+    outline:medium;
+}
+.duoyu{
+    width: 40px;height: 100%;
+    position: absolute;overflow: hidden;
+    right: 0px;top: 0;
+}
+.duoyu span{
+    display: inline-block;
+    margin: 12px 12px 12px 10px;
+    width: 20px;
+    height: 20px;
+    background: url(../imges/多鸠余.png) no-repeat 50%;
+    background-size: 20px;
+}
+/* 多鸠余的 内容 */
+.duojyu{
+    position: absolute;
+    top: 53px;z-index: 10;
+    right: 10px;
+    display: block;
+    z-index: 1000;
+    border-radius: 4px;
+    width: 125px;
+    background: rgba(0,0,0,.9);
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    list-style: none outside none;
+}
+.duojyu:before {
+    position: absolute;
+    top: -5px;
+    right: 5px;
+    width: 10.5px;
+    height: 5px;
+    background: url(../imges/三角.png) no-repeat 50%;
+    background-size: 100% 100%;
+    content: "";
+}
+.duojyu li{
+    display: block;
+    position: relative;
+    border-bottom: 1px solid hsla(0,0%,100%,.2);
+    height: 40px;
+    line-height: 40px;
+    z-index: 1000;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    list-style: none outside none;
+}
+.duojyu li a {
+    display: block;
+    border: 0;
+    width: 100%;
+    font-size: 14px;
+    color: #fff;
+    z-index: 1000;
+    text-decoration: none;
+}
+.duojyu li a span{position: absolute;top: 0;left: 0;width: 40px;height: 40px;
+}
+.duojyu li a span img{width: 15px;height: auto;margin-left: 15px;margin-top: -4px;}
+.duojyu li a strong {
+    font-weight: 400;
+    margin-left: 40px;
+}
+/* 第二条   综合 */
+.DBgdshx-02{
+    width: 100%;height: 40px;
+    background: #fff;position: relative;
+    border-bottom:1px solid #f5f5f5; 
+    padding: 8px 0;
+}
+.DBgdshx-02-a{
+    width: 25%; display: block;height: 100%;float: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding: 0 5px;    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+    line-height: 24px;
+    text-align: center;
+    font-size: 14px;
+}
+.DBgdshx-02-a span{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    box-sizing: border-box;
+    position: relative;
+    display: inline-block;
+    max-width: 100%;
+}
+.sxcxz{
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: -2px;
+    margin-left: 2px;
+    width: 13px;
+    height: 13px;
+    background: url(../imges/6969.png) no-repeat;
+    background-size: 13px auto;
+}
+/* 第二条   综合 END */
+/* 综合的弹框 */
+.DBgdshx-02-TK{
+    width: 100%;height: 225px;position: absolute;
+    top: 85px;z-index: 111;background: white;
+    display: none;
+}
+.DBgdshx-02-TK ul{position: relative;}
+.DBgdshx-02-TK ul li{
+    padding: 0 35px 0 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    position: relative;
+    box-sizing: border-box;
+    height: 45px;
+    line-height: 45px;
+    font-size: 14px;
+    color: #333;
+}
+#x-02-TK1{color: #e93b3d;
+    background: url(../imges/gougou.png) right 10px bottom 15px no-repeat;
+    background-size: 12px auto;
+}
+.DBgdshx-02-TK ul li:not(:last-child):before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    pointer-events: none;
+    background-color: #e5e5e5;
+    height: 1px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+/* 综合的弹框 END */
+/* 点击后 出来的灰色背景 */
+.DBgdshx-bg{
+    width: 100%;height: 736px;display: none;
+    position: absolute; z-index: 1;
+    background:rgba(190, 190, 190, 0.534) ;
+}
+/* 第三条  */
+.DBgdshx-03{
+    width: 100%;height: 45px;
+    background: #fff;position: relative;
+}
+.bonbdr{
+    width: 766.828px;position: absolute;
+    height: 1px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    pointer-events: none;
+    background-color: #e5e5e5;
+}
+.DBgdshx-03-lu{
+    overflow: hidden;
+    overflow-x: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    vertical-align: text-top;
+    white-space: nowrap;
+    z-index: 2;box-sizing: border-box;
+    position: relative;
+    padding: 10px 5px 10px 15px;
+    height: 45px;
+    text-align: center;
+}
+.DBgdshx-03-lu li{
+    float: none;
+    display: inline-block;
+    width: 24%;font-size: 12px;
+    padding-right: 6px;
+    vertical-align: top;    box-sizing: border-box;
+}
+.DBgdshx-03-lu li a{
+    display: block;
+    position: relative;
+    padding: 0 5px;
+    height: 25px;
+    line-height: 25px;
+    color: #666;
+    background-color: #f2f2f7;
+    border-radius: 2px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+/* 第三条 END */
+/* 顶部固定搜索栏 END*/
+/* 内容 */
+.blj-nor{
+    width: 100%;
+    position: relative;padding-top: 130px;
+}
+.blj-nor-xr{
+    width: 100%;height: 135px;    position: relative;
+    padding: 10px 0 5px 10px;background-color: #fff;
+}
+.blj-nor-xr img{
+    display: block;float: left;
+    height: 120px; width: 120px;margin-right: 10px;
+}
+.blj-nor-xr span{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    height: 38px;
+}
+.blj-nor-xr strong{
+    margin-top: 9px;
+    margin-right: 2px;
+    display: inline-block;
+    height: 18px;color: #e93b3d;
+    min-width: 40px;
+    font-weight: 400;
+    font-size: 18px;
+}
+.blj-nor-xr strong em{
+    font-style: normal;float: left;
+}
+.blj-nor-xr strong em span{
+    float: right;
+}
+.blj-nor-xr i{
+    font-size: 12px;
+    color: #999;
+}
+.blj-nor-xr li{
+    position: relative;
+    display: inline-block;
+    padding-right: 14px;
+    line-height: 14px;
+    max-width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #999;
+    font-size: 12px;
+}
+.blj-nor-xr li:after {
+    content: "";cursor: pointer;
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-top: 1px solid #999;
+    border-left: 1px solid #999;
+    -webkit-transform-origin: 50%;
+    transform-origin: 50%;
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    right: 5px;
+    top: 50%;
+    margin-top: -4px;
+}
+.blj-nor-xr-2{
+    width: 47%; position: relative;margin-bottom: 10px;
+    background-color: #fff;margin-left: 2%;float: left;
+}
+.blj-nor-xr-2 img{
+    width: 100%;height: auto;
+}
+.blj-nor-xr-2 span{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    height: 38px;
+}
+.blj-nor-xr-2 strong{
+    margin-top: 9px;
+    margin-right: 2px;
+    display: inline-block;
+    height: 18px;color: #e93b3d;
+    min-width: 40px;
+    font-weight: 400;
+    font-size: 18px;
+}
+.blj-nor-xr-2 strong em{
+    font-style: normal;float: left;
+}
+.blj-nor-xr-2 strong em span{
+    float: right;
+}
+.blj-nor-xr-2 i{
+    font-size: 12px;
+    color: #999;
+}
+.blj-nor-xr-2 li{
+    position: relative;
+    display: inline-block;
+    padding-right: 14px;
+    line-height: 14px;
+    max-width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #999;
+    font-size: 12px;
+}
+.blj-nor-xr-2 li:after {
+    content: "";cursor: pointer;
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-top: 1px solid #999;
+    border-left: 1px solid #999;
+    -webkit-transform-origin: 50%;
+    transform-origin: 50%;
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    right: 5px;
+    top: 50%;
+    margin-top: -4px;
+}
+
+/* 内容 END */
+/* 点击切换内容 */
+.CLI-qh-1{
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    background: hsla(0,0%,100%,.9) no-repeat 50%;
+    background-size: 20px;
+    border: 1px solid #ccc;
+    border-radius: 17px;
+    overflow: hidden;
+    clear: both;
+    background-image: url(../imges/sifangge.png);
+    background-size: 16px;
+    position: fixed;
+    bottom: 50px; right: 10px;
+}
+.CLI-qh-2{
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    background: hsla(0,0%,100%,.9) no-repeat 50%;
+    background-size: 20px;
+    border: 1px solid #ccc;
+    border-radius: 17px;
+    overflow: hidden;
+    clear: both;
+    background-image: url(../imges/sangangd.png);
+    background-size: 16px;
+    position: fixed;
+    bottom: 50px; right: 10px;
+}
+
+/* 点击切换内容 END */

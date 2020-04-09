@@ -1,0 +1,591 @@
+*{margin: 0;padding: 0;}
+li{
+    list-style: none;
+}
+body{
+    background-color: #f7f7f7;
+    min-height: 46px;
+}
+/* 头部标题 */
+.header{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background-color: #fff;
+    border-bottom: 1px solid #f7f7f7;
+}
+.turn{
+    width: 44px;
+    height: 44px;
+    display: block;
+    background:url(../images/left.png) no-repeat 50%;
+    background-size:20px 20px ;
+}
+.font{
+    font-size: 18px;
+    color: #333;
+    flex: 1;
+    text-align: center;
+    line-height: 44px;
+}
+.right{
+    width: 44px;
+    height: 44px;
+    display: block;
+    background:url(../images/123.png)no-repeat 50%;
+    background-size: 20px ;
+}
+
+.main{
+    position: relative;
+    height: auto;
+    background-color: #f7f7f7;
+}
+/* 空荡荡的购物侧 */
+.empty{
+    position: relative;
+    flex: 1;
+    padding: 70px 0 65px;
+    text-align: center;
+    display: none;
+}
+.empty img{
+    width: 90px;
+    height: 90px;
+}
+.empty p{
+    font-size: 16px;
+    color: #333;
+    line-height: 16px;
+    margin-top: 15px;
+}
+/* 商品购物车 */
+.goods{
+    position: relative;
+    flex: 1;
+    padding: 70px 0 65px;
+    text-align: center;
+}
+/* 京东秒杀 */
+.p{
+    position: relative;
+    margin: 15px 0;
+    height: 1em;
+    line-height: 1em;
+    text-align: center;
+    font-size: 12px;
+    color: #999;
+    flex: 1;
+}
+.miao{
+    z-index: 2;
+    position: relative;
+    padding: 0 15px;
+    background-color: #f7f7f7;
+}
+.befo{
+    content: "";
+    position: absolute;
+    top: 50%;
+    margin-top: -2px;
+    width: 4px;
+    height: 4px;
+    background-color: #ccc;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    z-index: 3;
+}
+.after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    margin-top: -2px;
+    width: 4px;
+    height: 4px;
+    background-color: #ccc;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.tafter{
+    content: "";
+    position: absolute;
+    z-index: 1;
+    pointer-events: none;
+    background-color: #ccc;
+    height: 1px;
+    left: 0;
+    right: 0;
+    top: 0;
+    left: 10px;
+    right: 10px;
+    top: 50%;
+}
+/* 购物车商品编辑 */
+.jdShop{
+    background-color: #fff;
+}
+/* 地区编辑 */
+.editor{
+    position: relative;
+    overflow: hidden;
+    padding: 0 10px;
+    line-height: 45px;
+    background: #fff;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    border-bottom: 1px solid #f7f7f7;
+}
+/* 坐标 */
+.coordinates{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    margin-top: -8px;
+    background-image: url(../images/精灵图.png);
+    background-position: -100px -62px;
+    background-size: 116px 110px;
+    width: 13px;
+    height: 15px;
+}
+.region{
+    position: relative;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+    color: #999;
+    margin-right: 10px;
+    padding-left: 18px;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 14px;
+}
+/* 编辑 */
+.choose{
+    display: block;
+    position: relative;
+    -webkit-flex-shrink: 0;
+    flex-shrink: 0;
+    padding-left: 10px;
+    font-size: 14px;
+    color: #333;
+}
+.section{
+    position: relative;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+.head-warp{
+    position: relative;
+    min-height: 46px;
+}
+/* 圆圈 */
+.aaa{
+    margin-left: -10px;
+    left: 50%;
+    top: 50%;
+    margin-top: -10px;
+}
+.round{
+    position: absolute;
+    content: "";
+    background-image: url(../images/精灵图.png);
+    background-position: -80px -40px;
+    background-size: 116px 110px;
+    width: 20px;
+    height: 20px;
+}
+.OO{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 42px;
+    height: 100%;
+    z-index: 2;
+}
+.head-title{
+    box-sizing: border-box;
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    padding: 5px 10px 5px 42px;
+    min-height: 46px;
+    z-index: 1;
+}
+.jd{
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: url(../images/精灵图.png)no-repeat -20px -48px;
+    background-size: 116px 110px;
+    margin-right: 5px;
+}
+/* 商家名称 */
+.jd-title{
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+    box-sizing: border-box;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 700;
+    margin-right: 10px;
+    width: 100%;
+}
+.selected{
+    overflow: hidden;
+    position: relative;
+}
+.items{
+    z-index: 1;
+    position: relative;
+    min-height: 100px;
+    padding: 20px 0 20px 150px;
+    padding-top: 0;
+}
+.pich{
+    z-index: 1;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 100%;
+}
+.dd{
+    margin-left: -10px;
+    left: 20px;
+    top: 40px;
+}
+.opq{
+    position: absolute;
+    left: 40px;
+    top: 0;
+    display: block;
+    width: 100px;
+    height: 100px;
+    box-shadow: 0 0 18px 0 rgba(0,0,0,.05);
+    border-radius: 2px;
+}
+/* 商品名称 */
+.name{
+    font-size: 14px;
+    padding-right: 10px;
+    margin-bottom: 3px;
+    word-break: break-all;
+    position: relative;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.mod{
+    display: inline-block;
+    vertical-align: middle;
+    height: 14px;
+}
+.mod-img{
+    display: block;
+    height: 100%;
+}
+/* 商品类型 */
+.type{
+    display: flex;
+    align-items: center;
+    margin: 5px 10px 0 0;
+    font-size: 10px;
+}
+.sku{
+    position: relative;
+    background: #f7f7f7;
+    padding: 0 15px 0 5px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 10px;
+    color: #666;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+    border-radius: 2px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.icon{
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    margin-top: -5px;
+    background-image: url(../images/精灵图.png);
+    background-position: -85px -68px;
+    background-size: 116px 110px;
+    width: 10px;
+    height: 10px;
+}
+.service{
+    height: 20px;
+    line-height: 20px;
+    padding: 0 17px 0 5px;
+    background: #f7f7f7;
+    color: #666;
+    border-radius: 2px;
+    position: relative;
+    font-size: 10px;
+    margin-left: 10px;
+}
+.icon2{
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    margin-top: -5px;
+    background-image: url(../images/精灵图.png);
+    background-position: -85px -68px;
+    background-size: 116px 110px;
+    width: 10px;
+    height: 10px;
+    transform: rotate(-90deg);
+}
+/* 京东白条 */
+.ious{
+    margin: 5px 10px 0 0;
+    height: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    line-height: 20px;
+}
+.white{
+    position: relative;
+    float: left;
+    margin: 0 6px;
+    color: #f2270c;
+    font-size: 10px;
+    margin-left: 0;
+}
+/* 个数价格 */
+.price{
+    align-items: center;
+    margin: 5px 10px 0 0;
+    display: flex;
+    font-size: 10px;
+}
+.money{
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+    line-height: 16px;
+    color: #f2270c;
+    font-size: 10px;
+}
+.itn{
+    font-size: 16px;
+}
+.num-warp{
+    position: relative;
+    display: block;
+    width: 72px;
+    border-radius: 2px;
+    overflow: hidden;
+    background-color: #f7f7f7;
+    font-weight: 400;
+}
+/* 减 */
+.subtract{
+    position: relative;
+    float: left;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    color:rgba(0,0,0,.3);
+    background: #fff;
+}
+/* 个数 */
+.amount{
+    color: #333;
+    font-size: 14px;
+    -webkit-appearance: none;
+    border: none;
+    width: 30px;
+    text-align: center;
+    height: 20px;
+    line-height: 20px;
+    position: relative;
+    float: left;
+    background: #f7f7f7;
+}
+/* 加 */
+.add{
+    position: relative;
+    float: left;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    background: #f7f7f7;
+}
+/* 删除 */
+.m-action{
+    margin: 10px 10px 0 0;
+    height: 15px;
+    color: #999;
+    font-size: 0;
+    text-align: right;
+}
+.pop{
+    position: relative;
+    padding: 0 10px;
+    line-height: 15px;
+    font-size: 10px;
+    padding-right: 0;
+}
+/* 结算固定栏 */
+.settlement{
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    height: 50px;
+    background: hsla(0,0%,100%,.95);
+    color: #333;
+    font-size: 14px;
+    position: fixed;
+    z-index: 120;
+    bottom: 0;
+    padding-bottom: env(safe-area-inset-bottom);
+    padding-left: 40px;
+}
+/* 全选 */
+.icon-sle{
+    z-index: 1;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    padding-top: 32px;
+    font-size: 10px;
+    text-align: center;
+    height: 15px;
+    color: #999;
+}
+
+.ooo{
+    left: 50%;
+    top: 7px;
+    margin-left: -10px;
+}
+/* 总价 */
+.total{
+    display: flex;
+}
+.tail{
+    justify-content: center;
+    height: 50px;
+    text-align: right;
+    position: relative;
+    display: flex;
+    flex: 1;
+}
+.sum{
+    position: relative;
+    width: 100%;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1em;
+    height: 1em;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    text-align: right;
+}
+.sum-col{
+    color: #f2270c;
+}
+/* 结算 */
+.clo{
+    display: block;
+    width: 110px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 2px;
+    background-color: #d7d7d7;
+    color: #fff;
+    background-image: none;
+    margin-left:  10px;
+}
+.clo2{
+    flex-shrink: 0;
+    margin-left: 10px;
+    font-weight: 700;
+    display: block;
+    width: 110px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 2px;
+    background-color: #f2270c;
+    color: #fff;
+    background-image: -webkit-linear-gradient(315deg,#f2140c,#f2270c 70%,#f24d0c);
+    background-image: linear-gradient(135deg,#f2140c,#f2270c 70%,#f24d0c);
+}
+.size{
+    font-weight: 400;
+    font-size: 12px;
+    font-family: none;
+}
+.delete{
+    display: flex;
+    display: none;
+}
+/* 选中红色圈圈 */
+.redO{
+    position: absolute;
+    content: "";
+    margin-left: -10px;
+    background-image: url(../images/精灵图.png);
+    background-position: 0 -28px;
+    background-size: 116px 110px;
+    width: 20px;
+    height: 20px;
+}
+/* 删除 */
+
+.btn1{
+    float: right;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    display: block;
+    width: 76px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #333;
+    margin: 10px 10px 0 0;
+    text-align: center;
+}
+.btn1-red{
+    border: none;
+    display: block;
+    width: 76px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 14px;
+    border-radius: 4px;
+    background-color: #f2270c;
+    color: #fff;
+}

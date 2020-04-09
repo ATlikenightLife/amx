@@ -1,0 +1,388 @@
+body{
+    background-color: #f6f6f6;
+}
+*{
+    margin: 0;padding: 0;
+}
+/* 头部 */
+.heads{
+    width: 100%;height: 45px;
+    background: white;
+}
+/* 返回键 */
+.blcx{
+    width: 40px;height: 100%;float: left;
+}
+.blcx a span{
+    width: 20px;height: 20px;display: block;
+    margin: 12px 0 0 10px;
+}
+.blcx a span img{
+    width: 100%;height: auto;
+}
+/* 我的京东 */
+.myJD{
+    text-align: center;margin: 0 70px;height: 44px;font-size: 16px;
+    line-height: 44px;color: #333;overflow: hidden;
+    text-overflow: ellipsis;white-space: nowrap;
+}
+
+.duoyu{
+    width: 40px;height: 100%;
+    position: absolute;overflow: hidden;
+    right: 0px;top: 0;
+}
+.duoyu span{
+    display: inline-block;
+    margin: 12px 12px 12px 10px;
+    width: 20px;
+    height: 20px;
+    background: url(../imges/duojiuyu.png) no-repeat 50%;
+    background-size: 20px;
+}
+/* 多鸠余的 内容 */
+.duojyu{
+    position: absolute;
+    top: 53px;z-index: 10;
+    right: 10px;
+    display: block;
+    z-index: 1000;
+    border-radius: 4px;
+    width: 125px;
+    background: rgba(0,0,0,.9);
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    list-style: none outside none;
+}
+.duojyu:before {
+    position: absolute;
+    top: -5px;
+    right: 5px;
+    width: 10.5px;
+    height: 5px;
+    background: url(../imges/三角.png) no-repeat 50%;
+    background-size: 100% 100%;
+    content: "";
+}
+.duojyu li{
+    display: block;
+    position: relative;
+    border-bottom: 1px solid hsla(0,0%,100%,.2);
+    height: 40px;
+    line-height: 40px;
+    z-index: 1000;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    list-style: none outside none;
+}
+.duojyu li a {
+    display: block;
+    border: 0;
+    width: 100%;
+    font-size: 14px;
+    color: #fff;
+    z-index: 1000;
+    text-decoration: none;
+}
+.duojyu li a span{position: absolute;top: 0;left: 0;width: 40px;height: 40px;
+}
+.duojyu li a span img{width: 15px;height: auto;margin-left: 15px;margin-top: -4px;}
+.duojyu li a strong {
+    font-weight: 400;
+    margin-left: 40px;
+}
+/* 多鸠余的 内容 END*/
+
+/* 用户资料 */
+.userxx{width: 100%;height: 134px;position: relative;}
+/* 背景 */
+.userxx_1{
+    position: relative;
+    overflow: hidden;
+    border-radius: 0 0 300px 300px / 0 0 20px 20px;
+    background: -webkit-gradient(linear, left top, right top, from(#eb3c3c), to(#ff7459));
+    background: -webkit-linear-gradient(left, #eb3c3c, #ff7459);
+    background: linear-gradient(90deg, #eb3c3c, #ff7459);
+    box-sizing: border-box;
+    min-height: 134px;
+    padding-top: 25px;
+    box-shadow: 0 2px 4px rgba(228, 57, 60, 0.4);
+}
+/* 用户内容 */
+
+.userxx_nro{
+    width: 92.75%;height: 72px;
+    padding: 0 15px 0px;
+    align-items: center;
+    position: relative;
+}
+.userxx_tx{
+    width: 62px; height: 62px;float: left;
+    border-radius: 50%;overflow: hidden;
+    margin-right: 15px;
+}
+.userxx_tx img{width: 100%;height: 100%;}
+
+.userxx_ne{float: left;
+    width: 27%;height: 21px;overflow: hidden;
+    text-overflow: ellipsis;white-space: nowrap;
+    font-size: 14px;color: #fff;
+}
+.ne_xg{display: block;width: 12px;height: 12px;
+    float: left;
+}
+.ne_xg img{width: 100%;height: auto;}
+.userxx_yne{
+    width: 74%;height: 18px;overflow: hidden;
+    float: left;font-size: 12px;white-space: nowrap;
+    color: rgba(255, 255, 255, 0.7);
+}
+.userxx_jxz{
+    float: left;
+    max-width: 150px;
+    height: 16px;
+    line-height: 16px;
+    padding: 0 8px;
+    margin: 6px 8px 0 0;
+    border-radius: 10px;
+    font-size: 10px;
+    color: #fff;
+    background: #c8483f;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* 内容 END */
+/* 账号管理 */
+
+.ZDgl{
+    position: absolute;
+    right: 15px;
+    top: 0;width: 20%;
+    height: 40px;
+    line-height: 40px;
+    overflow: hidden;
+}
+.zdglx{
+    width: 12px; height: 12px;float: left;
+    float: left; margin-left: 8px;margin-top: 14px;
+    background: url(../imges/zdgl.png) 0px 0px / 100% 100% no-repeat;
+}
+.ZDgl li{
+    list-style: none;color: rgba(76, 0, 0, 0.7);
+    font-size: 12px;
+}
+
+/* 账号管理  END*/
+
+/* 用户会员特权 */
+
+.vitQ{
+    width: 90.3%; height: 37px;
+    margin: 0 auto;background:url("../imges/bgxx.png") no-repeat left top;
+    background-size: 100% 67px;
+}
+.vitQ_nro{
+    width: 84.74%;height: 18px;
+    margin: 0 auto;padding-top: 10px;
+    color: #FFE678;
+    font-size: 12px;
+}
+.vitQ_nro_01{
+    position: relative;
+    padding-left: 78px;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;float: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.vitQ_nro_01::before {
+    position: absolute;
+    content: '';
+    width: 57px;
+    height: 12px;
+    left: 0;
+    top: 2px;
+    background: url(../imges/viptq.png) no-repeat center;
+    background-size: 100% 100%;
+}
+.vitQ_nro_01::after {
+    position: absolute;
+    content: '';
+    width: 1px;
+    height: 7px;
+    background: #FFE678;
+    left: 67px;
+    top: 5px;
+}
+.vitQ_nro_02{
+    position: relative;
+    -webkit-flex-shrink: 0;
+    flex-shrink: 0;
+    height: 16px;float:right;
+}
+/* 用户会员特权 END*/
+/* 用户资料END */
+
+/* 第二部分 订单情况 */
+.Ddkg{
+    width: 100%; height: 72px;
+    margin: 15px 0; background: #fff;
+}
+.Ddkg_01{
+    width: 25%;height: 100%;float: left;
+}
+.Ddkg_01 span{display: block;
+    width: 100%;height: 50%;
+    position: relative;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+    text-align: center;
+}
+.d1{
+    background: url(../imges/dai\ fukuan.png) 50%/auto 20px no-repeat;
+}
+.d2{
+    background: url(../imges/daishouh.png) 50%/auto 20px no-repeat;
+}
+.d3{
+    background: url(../imges/shouhou.png) 50%/auto 20px no-repeat;
+}
+.d4{
+    background: url(../imges/quanbudd.png) 50%/auto 20px no-repeat;
+}
+.Ddkg_01 li{
+    list-style: none;display: block;
+    color: #666;
+    font-size: 12px;
+    height: 50%;
+    line-height: 20px;
+    position: relative;
+    text-align: center;
+}
+/* 第二部分 订单情况  END*/
+
+/* 第三部分 资产  */
+
+.Ddkg_02{
+    width: 20%;height: 100%;float: left;
+}
+.Ddkg_02 span{
+    width: 100%;height: 30%;
+    position: relative;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;padding-top:20%;
+    flex: 1;display: block;
+    font-size:15px;
+    text-align: center;
+    line-height: 18px;
+    color: #e93b3d;
+    white-space: nowrap;
+}
+.Ddkg_02 li{
+    list-style: none;display: block;
+    color: #666;
+    font-size: 12px;
+    height: 45%;padding-top:5%;
+    line-height: 20px;
+    position: relative;
+    text-align: center;
+}
+.b1{background: url(../imges/wodezy.png) 50%/auto 20px no-repeat;}
+
+/* 第三部分 资产 end */
+
+/* 第四部分 店铺足迹 */
+.Ddkg_03{
+    width: 33.33%;height: 100%;float: left;
+}
+.Ddkg_03 span{
+    width: 100%;height: 20%;padding-top:10%;
+    display: block;text-align: center;
+}
+.Ddkg_03 li{
+    list-style: none;display: block;
+    color: #666;
+    font-size: 12px;
+    height: 45%;padding-top:5%;
+    line-height: 20px;
+    position: relative;
+    text-align: center;
+}
+/* 第四部分 店铺足迹 END */
+
+/* 第五部分 其他 */
+
+.Other{
+    width: 100%; height: 130px;
+    margin: 15px 0; background: #fff;
+}
+.Other_01{
+    width: 25%;height: 50%;float: left;
+}
+.Other_01 span{
+    width: 100%;height: 50%;display: block;padding-top:10%;
+}
+.b2{background: url(../imges/myyuy.webp) 50%/auto 20px no-repeat;}
+.b3{background: url(../imges/huoche.webp) 50%/auto 20px no-repeat;}
+.b4{background: url(../imges/yingyong.webp) 50%/auto 20px no-repeat;}
+.b5{background: url(../imges/yingyet.webp) 50%/auto 20px no-repeat;}
+.b6{background: url(../imges/yonghuhb.webp) 50%/auto 20px no-repeat;}
+.b7{background: url(../imges/JDjip.webp) 50%/auto 20px no-repeat;}
+.b8{background: url(../imges/jingdjiud.webp) 50%/auto 20px no-repeat;}
+
+.Other_01 li{
+    list-style: none;display: block;
+    color: #666;
+    font-size: 12px;
+    height: 40%;
+    line-height: 20px;
+    position: relative;
+    text-align: center;
+}
+
+/* 第五部分 其他 END */
+
+/* 底部固定导航栏 */
+
+.GD-footer{
+    width: 100%;height: 55px;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 31;
+    box-sizing: border-box;
+    list-style: none;background-color: #fff;
+    box-shadow: 0 0 10px 0 hsla(0,6%,58%,.6);
+    -webkit-box-shadow: 0 0 10px 0 hsla(0,6%,58%,.6);
+    -moz-box-shadow: 0 0 10px 0 hsla(0,6%,58%,.6);
+    font-size: 16px;
+}
+.GD-footer::after{
+    content: "";
+    display: table;
+    height: 0;
+    clear: both;
+}
+#GD-footer-ron{
+    height: 13.33333vw;
+    position: relative;
+    box-sizing: border-box;
+    float: left;
+    font-size: 16px;
+    background-color: transparent;
+    text-align: center;
+}
+#GD-footer-ron img{
+    width: 4.3em;
+}
+/* 底部固定导航栏 END */

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>登录页面</title>
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <!-- 可选的 Bootstrap 主题文件（一般不用引入） -->
+    <link rel="stylesheet" href="/css/bootstrap-theme.min.css">
+
+    <!-- bs的js组件依赖于jq，所以我们要先引入jq -->
+    <script src="/js/jquery-3.2.1.min.js"></script>
+
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="/js/bootstrap.min.js"></script>
+    <!-- 引入js -->
+    <script src="/js/login.js"></script>
+    <!-- 引入css -->
+    <link rel="stylesheet" href="/css/login.css">
+</head>
+<style>
+    a{text-decoration: none;}
+    a:visited{text-decoration: none;}
+    a:hover{text-decoration: none;}
+    a:active{text-decoration: none;}
+    a:link{text-decoration: none;}
+    input:-moz-placeholder,textarea:-moz-placeholder {color: #999;}   
+    input:-ms-input-placeholder,textarea:-ms-input-placeholder {color: #999;}   
+    input::-webkit-input-placeholder,textarea::-webkit-input-placeholder {color: #999;}
+    .fuck{font-size: 12px; color: red;}
+</style>
+<body>
+    <div class="both">
+        <div class="bothbar">
+            <!-- 内容区 -->
+            <div class="messagebar">
+                <!-- header -->
+                <div class="header">
+                    <span class="icon-back"></span>
+                    <span class="text-head">京东登录注册</span>
+                </div>
+                <!-- 表单部分内容 -->
+                <form id="loform" onsubmit="return send()">
+                <div class="mesc">
+                    <P class="inputc">
+                        <input name="username" placeholder="用户名/邮箱/手机号" type="text" class="iphone" id="name">
+                        <i class="iconclear" id="x1"></i>
+                    </P>
+                    <span id="user" class="fuck"></span>
+                    <P class="inputc">
+                        <input name="password" placeholder="请输入密码" type="password" class="iphone" id="pwd">
+                        <i class="iconcleart" id="x2"></i>
+                        <span class="offpwd" id="eyes"></span>
+                        <span class="textbtn">忘记密码</span>
+                    </P>
+                    <span id="mima" class="fuck"></span>
+                </div>
+
+                <!-- 登录按钮 -->
+                <input type="button" class="git" id="skt" value="登 录">
+                </form>
+             
+                <!-- 切换标签 -->
+                <p class="quickbtn">
+                    <span class="dxyz">短信验证码登录</span>
+                    <a href="/register"><span class="regis">快速注册</span></a>
+                </p>
+
+                <!-- 快捷登录（假） -->
+                <div class="quickl">
+                    <h4>其他登录方式</h4>
+                    <p class="quickt">
+                        <a class="qqlogin">QQ</a>
+                        <a class="wxlogin">微信</a>
+                    </p>
+                </div>
+
+                <!-- 协议 -->
+                <p class="ptip">
+                    登录即代表您已同意
+                    <a href="https://in.m.jd.com/help/app/private_policy.html">京东隐私政策</a>
+                </p>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>

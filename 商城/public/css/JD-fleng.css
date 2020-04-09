@@ -1,0 +1,374 @@
+hr{
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+body{overflow:hidden;
+    overflow-y:hidden;}
+a, a:visited {
+    text-decoration: none;
+    color: #333;
+}
+li, ol, ul {
+    list-style: none outside none;
+}
+a:link{ text-decoration: none;}
+ul{
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+/* 顶部固定搜索栏 */
+.DBgdshx{
+    width: 100%;height:45px;
+    background: #fff;position: fixed;
+    border-bottom:1px solid #f5f5f5; z-index: 100;
+}
+.FANx{padding-top:12px; 
+    display: block;width: 40px;height: 100%;
+    float: left;text-align: center;
+}
+.FANx span{font-size: 20px;color:#686868;}
+
+.DBgdshx-sx{
+    width: 80%;height: 30px;background: #f7f7f7;
+    float: left;margin-left: 5px;margin-top:7px;
+    border-radius:15px; 
+}
+.DBgdshx-sx i{
+    width: 18px;
+    height: 15px;
+    background: url(../imges/JLT.png) no-repeat;
+    background-position: -80px 0;
+    background-size: 200px;
+    margin-left: 10px;
+    margin: 8px 0 0 15px;
+    position: relative;
+    z-index: 1;
+    float: left;
+}
+.DBgdshx-sx input{
+    width: 85%;height: 100%;margin-left: 5px;
+    border: 0;margin-top: 8px;
+    background: 0 0;
+    font-size: 12px;
+    color: #232326;
+    padding-left: 5px;
+    box-sizing: border-box;
+    -webkit-box-flex: 1;
+    vertical-align: middle;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 30px;
+    font-family: inherit;
+    outline:medium;
+}
+.duoyu{
+    width: 40px;height: 100%;
+    position: absolute;overflow: hidden;
+    right: 0px;top: 0;
+}
+.duoyu span{
+    display: inline-block;
+    margin: 12px 12px 12px 10px;
+    width: 20px;
+    height: 20px;
+    background: url(../imges/多鸠余.png) no-repeat 50%;
+    background-size: 20px;
+}
+/* 多鸠余的 内容 */
+.duojyu{
+    position: absolute;
+    top: 53px;z-index: 10;
+    right: 10px;
+    display: block;
+    z-index: 1000;
+    border-radius: 4px;
+    width: 125px;
+    background: rgba(0,0,0,.9);
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    list-style: none outside none;
+}
+.duojyu:before {
+    position: absolute;
+    top: -5px;
+    right: 5px;
+    width: 10.5px;
+    height: 5px;
+    background: url(../imges/三角.png) no-repeat 50%;
+    background-size: 100% 100%;
+    content: "";
+}
+.duojyu li{
+    display: block;
+    position: relative;
+    border-bottom: 1px solid hsla(0,0%,100%,.2);
+    height: 40px;
+    line-height: 40px;
+    z-index: 1000;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    list-style: none outside none;
+}
+.duojyu li a {
+    display: block;
+    border: 0;
+    width: 100%;
+    font-size: 14px;
+    color: #fff;
+    z-index: 1000;
+    text-decoration: none;
+}
+.duojyu li a span{position: absolute;top: 0;left: 0;width: 40px;height: 40px;
+}
+.duojyu li a span img{width: 15px;height: auto;margin-left: 15px;margin-top: -4px;}
+.duojyu li a strong {
+    font-weight: 400;
+    margin-left: 40px;
+}
+/* 顶部固定搜索栏 END*/
+/* 套住固定栏 除外的内容  */
+
+.main{
+    width: 100%;height: auto;position: relative;padding-top: 45px;
+}
+/* z左边固定栏 */
+
+.leftTab{
+    width: 20%;
+    background: #f8f8f8;
+    float: left;position: relative;
+    min-width: 76px;
+    overflow: hidden;
+    height: 643px;
+    overflow-y: auto;
+    min-height: 100%;
+    overflow:hidden;
+    overflow-y:hidden;
+}
+.leftTab-kx{
+    width: 100%;
+    display: block;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    /* transition: all 1s; */
+    list-style-type: none;
+}
+#cur{background: #fff;}
+#cur a{color: #e93b3d;}
+.leftTab-kx li{
+    display: block;list-style: none;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    height: 46px;
+    line-height: 46px;
+    text-align: center;
+    position: relative;
+    background: #f8f8f8;
+}
+.leftTab-kx li:before {
+    content: "";
+    height: 92px;
+    width: 1px;
+    position: absolute;
+    left: auto;
+    top: 0;
+    right: 0;
+    bottom: auto;
+    background-color: #e5e5e5;
+    border: 0 solid transparent;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    transform: scale(.5);
+    -webkit-transform: scale(.5);
+    -moz-transform: scale(.5);
+    -ms-transform: scale(.5);
+    -o-transform: scale(.5);
+    transform-origin: top left;
+    -webkit-transform-origin: top left;
+    -moz-transform-origin: top left;
+    -ms-transform-origin: top left;
+    -o-transform-origin: top left;
+}
+.leftTab-kx li:after {
+    content: "";
+    height: 1px;
+    width: 200%;
+    position: absolute;
+    left: 0;
+    top: auto;
+    right: auto;
+    bottom: 0;
+    background-color: #e5e5e5;
+    border: 0 solid transparent;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    transform: scale(.5);
+    -webkit-transform: scale(.5);
+    -moz-transform: scale(.5);
+    -ms-transform: scale(.5);
+    -o-transform: scale(.5);
+    transform-origin: top left;
+    -webkit-transform-origin: top left;
+    -moz-transform-origin: top left;
+    -ms-transform-origin: top left;
+    -o-transform-origin: top left;
+}
+/* z左边固定栏  END*/
+
+/* 右边内容  */
+.right-ron{
+    width: 79%;height: 643px;
+    float: left;position: relative;
+    color: #252525;
+}
+.right-ron ul{
+    display: block;width: 100%;
+    position: absolute;z-index: 1;
+    padding: 15px 7px 0;;
+}
+.right-ron ul h4{
+    font-size: 14px;margin: 0;padding: 0;line-height: 1em;
+    font-weight: 700;color: #333;display: inline-block;
+    margin-bottom: 15px;
+}
+.right-ron-Phag{
+    display: block;list-style: none;float: right;margin-top: 4px;
+}
+.right-ron-Phag-i1{
+    display: block;
+    line-height: 0;
+    width: 12px;float: left;
+    height: 12px;
+    background: url(../imges/paihangbangxxx.png)no-repeat;
+    background-size: 12px 12px;
+}
+.right-ron-Phag span{
+    display: block;float: left;
+    color: #848689;
+    font-size: 10px;
+    line-height: 10px;
+    margin-left: 4px;
+    position: relative;
+    top: 1px;
+}
+.right-ron-Phag-i2{
+    background: url(../imges/rightsssxxx.png) no-repeat;
+    background-size: 12px 12px;
+    position: relative;
+    top: 1px;display: block; float: left;
+    width: 12px;
+    height: 12px;
+}
+.right-ron ul li{
+    width: 32.8%;
+    float: left;
+    text-align: center;
+    display: block;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.right-ron ul li a img{
+    width: 70px;  height: 70px;
+}
+.right-ron ul li a span{
+    color: #333;
+    height: 35px;word-break: break-all;
+    margin-top: 2px;
+    -webkit-box-pack: start;
+    width: 100%;display: block;text-align: center;
+    overflow: hidden;-webkit-line-clamp: 2;
+    text-overflow: ellipsis;
+}
+/* 右边内容 END */
+
+/* 套住固定栏 除外的内容 END */
+
+
+
+
+
+
+/* 底部固定导航栏 */
+
+.GD-footer{
+    width: 100%;height: 55px;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 31;
+    box-sizing: border-box;
+    list-style: none;background-color: #fff;
+    box-shadow: 0 0 10px 0 hsla(0,6%,58%,.6);
+    -webkit-box-shadow: 0 0 10px 0 hsla(0,6%,58%,.6);
+    -moz-box-shadow: 0 0 10px 0 hsla(0,6%,58%,.6);
+    font-size: 16px;
+}
+.GD-footer::after{
+    content: "";
+    display: table;
+    height: 0;
+    clear: both;
+}
+#GD-footer-ron{
+    height: 13.33333vw;
+    position: relative;
+    box-sizing: border-box;
+    float: left;
+    font-size: 16px;
+    background-color: transparent;
+    text-align: center;
+}
+#GD-footer-ron img{
+    width: 4.3em;
+}
+/* 底部固定导航栏 END */
+
+/* 大小兼容  最小不能小于275px */
+@media (max-width: 360px){
+    .leftTab{
+        width: 70px;
+    }
+    .right-ron{
+        width: 280px;
+    }
+}
+@media (max-width: 320px){
+    .leftTab{
+        width: 30px;
+    }
+    .right-ron{
+        width: 220px;
+    }
+}
+@media (max-width: 300px){
+    .leftTab{
+        width: 20px;
+    }
+    .right-ron{
+        width: 200px;
+    }
+}
+@media (max-width: 275px){
+    .leftTab{
+        width: 10px;
+    }
+    .right-ron{
+        width: 150px;
+    }
+}

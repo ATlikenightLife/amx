@@ -1,0 +1,765 @@
+
+body{background-color: #f6f6f6;}
+hr{
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+a, a:visited {
+    text-decoration: none;
+    color: #333;
+}
+ul{
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+/* 头部 */
+.hder{
+    /* background-image: linear-gradient(0deg,#f1503b,#c82519 50%); */
+    height: 44px;
+    width: 100%;position: fixed;
+    top: 0;z-index: 15;
+}
+.Dxu{
+    width: 40px;height: 100%;
+    position: absolute;;left: 0;
+}
+/* 三横  多选 */
+.Dxu span{
+    width: 20px;height: 18px;
+    margin: 14px 0 0 15px;
+    background: url(../imges/Dxu.png)no-repeat;
+    background-size: 100% 100%;display: block;
+}
+/* 搜索框样式 */
+.Shouxk{
+   width: 85%;
+   height: 100%;
+   margin: 0 auto;
+}
+.Shouxk01{
+    width: 90%;height: 30px;
+    position: relative;
+    margin-top: 7px;margin-left: 16px;
+    background: white;box-sizing: border-box;
+    border-radius: 15px;
+}
+.JDlogo{
+    display: block;width: 20px;height: 15px;
+    background: url(../imges/JDlogo.png)no-repeat;
+    background-size: 20px 15px;
+    margin: 8px 8px 0 15px;
+    position: relative;
+    z-index: 1;
+    float: left;
+}
+.shu{position: absolute;
+    top: 4px;left: 38px;
+    color: rgb(201, 201, 201) ;}
+.shoux{
+    display: block;
+    width: 18px;
+    height: 15px;
+    background: url(../imges/JLT.png) no-repeat;
+    background-position: -80px 0;
+    background-size: 200px;
+    margin: 8px 0 0 5px;
+    position: relative;
+    z-index: 1;
+    float: left;
+}
+.shouxkkk{
+    border: 0;
+    background: 0 0;
+    font-size: 12px;
+    color: #232326;
+    padding-left: 5px;
+    box-sizing: border-box;
+    -webkit-box-flex: 1;
+    height: auto;
+    margin: 0 0 0 5px;
+    vertical-align: middle;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 71%;
+    line-height: 30px;
+    font-family: inherit;
+    outline:medium;
+}
+.denglu{
+    width: 40px;height: 100%;
+    position: absolute;right: 0%;top: 0;
+    /* background: #f1503b; */
+}
+.denglu span{
+    display: inline-block;
+    margin: 11px 2px;
+    color: #fff;
+    font-size: 14px;
+}
+.denglu span a{text-decoration: none;color: #fff;} 
+.denglu span a:visited{text-decoration: none;}
+.denglu span a:hover{text-decoration: none;}
+.denglu span a:active{text-decoration: none;}
+.denglu span a:link{text-decoration: none;}
+/* 搜索框样式  END */
+
+/* 红色背景 +轮播图 */
+.bgltb{
+    width: 100%;
+    height: 15.58rem;
+    overflow: hidden;
+    position: relative;
+}
+.bgltb-bg{
+    background-image: linear-gradient(0deg,#f1503b,#c82519 50%);
+    position: absolute;
+    top: 0;
+    left: -25%;
+    height: 12.07rem;
+    width: 150%;
+    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 100%;
+}
+
+/* 轮播图 */
+.LBTkt{
+   width: 90%;height: 74%;
+   position: absolute;
+   bottom: 0;left: 5%;
+   border-radius: 10px;
+   overflow: hidden;
+}
+.left,.right{
+    display: none;
+}
+/* 焦点的样式 */
+.carousel-indicators{
+    bottom: 2px;
+}
+.carousel-indicators li{
+    box-sizing: border-box;
+    border-radius: 7px;
+    height: 3px;
+    width: 8px;
+    background: hsla(0,0%,92.9%,.4);
+    margin: 0 2px;
+    display: inline-block;
+    opacity: 1;border: none;
+}
+.carousel-indicators .active{
+    background: #ededed;
+    width: 12px;height: 3px;display: inline-block;
+    opacity: 1;border: none;
+}
+/* 轮播图 END */
+
+/* 第二部分  gogo */
+
+.two-kuangk{
+    height: 180px;width: 100%;
+    /* background: lightskyblue; */
+    overflow: hidden;position: relative;
+}
+/* 第二部分的内容 */
+.two-nrong{
+    width: 200%;height: 90%;
+    position: absolute;
+}
+.boxddd{
+    width: 10%;
+    text-align: center;
+    display: block;
+    float: left;height: 50%;
+}
+.boxddd img{
+    width: 60%;height: auto;
+    margin-top: 13px;
+}
+.boxddd span{
+    display: block;
+    margin-top: .3rem;
+    font-size: .6rem;
+    color: #666;
+}
+/* 第二部分的内容 END */
+/* 第二部分的 提示小园点 */
+.tisxiaoyd{
+    width: 100%;height: 5px;
+    text-align: center;
+    position: absolute;
+    bottom: 15px;
+}
+.omb{
+    font-weight: bold;
+    width: 5px;
+    height: 100%;
+    opacity: 1;
+    background-color: rgba(0,0,0,.2);
+    box-sizing: border-box;
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 10px 3px;
+}
+.oncm{
+    background-color: #e93b3d;
+    width: 10px;
+    height: 5px;
+    border-radius: 3px;
+    opacity: .7;
+}
+
+/* 第二部分  END */
+
+/* 第三部分  */
+.theryms{
+    width: 100%;
+    height: 190px;
+    /* background: #f1503b; */
+    position: relative;
+}
+.miaosha{
+    width: 94%;height: 94%;
+    background: white;margin-left: 3%;
+    margin-top: 8px;border-radius: 10px;
+}
+.jdmslg{
+    width: 100%;height: 38px;
+    background: url(../imges/miaoshabg.png) no-repeat;
+    background-size: contain;
+}
+.JDmx{
+    display: inline-block;
+    width: 20.3%;
+    height:30px;
+    margin-top: .6rem;
+    margin-right: .3rem;
+    margin-left: .95rem;
+    background: url(../imges/JDmx.png) no-repeat;
+    background-size: contain;
+}
+.jdmslg a{
+    float: right;
+    display: inline-block;
+    color: rgb(242,48,48);
+    font-size: 10px;
+    text-align: right;
+    position: relative;
+    padding-top: 10px;padding-right: 25px;
+}
+.jdmslg i{
+    display: inline-block;
+    width: 12.14px;
+    height: 12.14px;
+    background: url(../imges/rgrig.png) no-repeat;
+    background-size: cover;
+    position: absolute;
+    right: 25px;
+    top: 11px;
+}
+
+/* 秒杀内容  蛇皮滑动 */
+.miaoskkk{
+    width: 100%;height: 74%;
+    position: relative;
+    overflow: hidden;
+}
+.miaosnr{
+    width: 200%;height: 100%;
+    position: absolute;
+}
+.JDmsnr{
+    display: block;
+    float: left;
+    width: 80px;height: 100%;
+    margin-left:8px;
+    text-align: center;  color: #e93b3d;line-height: 16px;
+    font-weight: 900;
+}
+.JDmsnr img{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    margin-top: 10px;
+}
+.JDmsnr em{    font-size: 11px; padding-right: 2px; font-style: normal;
+}
+#price{
+    color: #999;
+    font-size: 12px;
+    line-height: 12px;
+    margin: 4px 0 11px;
+    text-align: center;
+    padding: 0 2px;
+    display: inline-block;
+    position: relative;font-weight: 100;
+}
+#price hr{
+    position: absolute;
+    left: 0;
+    top: 6px;
+    width: 200%;
+    height: 1px;
+    background-color: #686868;
+    -webkit-transform: scale(.5);
+    transform: scale(.5);
+    -webkit-transform-origin: left top;
+    transform-origin: left top;
+    overflow: hidden;
+    box-sizing: border-box;
+    border: 0;
+}
+/* 秒杀内容  蛇皮滑动 END*/
+/* 第三部分 END */
+/* 第四部分  */
+
+.Newren{
+    width: 100%;height: 135px;
+    position: relative;
+}
+.Newren-1{
+    width: 94%;height: 100%;
+    border-radius: 12px;
+    margin-left: 3%;overflow: hidden;
+}
+.Newren-1 span{
+    width: 50%;height: 100%;
+    display: block;float: left;overflow: hidden;
+}
+.Newren-1 span img{
+    width: 100%;height: 100%;
+}
+/* 第四部分 END */
+/* 第五部分 东家小院 */
+
+.DJxyuan{
+    width: 100%;height: 316px;
+    position: relative;
+    margin-top: 10px;
+}
+.djxyhead{
+    width: 100%;height: 38.5px;
+    background: url(../imges/dongjiaxiaoy.dpg)no-repeat;
+    background-size: contain;
+}
+.djxynro{
+    width: 94%;height: 266px;
+    border-radius: 10px;background: white;
+    margin-left: 3%;overflow: hidden;
+    position: relative;
+}
+.djxyser{
+    width: 50%;height: 50%;float: left;
+    border: 1px solid #f5f5f5;
+    padding: 7px 7px 5px;
+}
+.djxyser span{
+    background: -webkit-linear-gradient(left,#45CAFF,#1471FB);
+    background: linear-gradient(90deg, #45CAFF,#1471FB);
+    -webkit-background-clip: text;
+    color: transparent;font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    display: inline-block;
+    max-width: 100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.djxyser p{
+    overflow: hidden;color: #666771;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    font-size: .6rem;
+    line-height: 1.825rem;
+    height: 1.75rem;margin-top: -5px;margin-bottom: 5px;
+}
+.djxysbbf{
+    width: 94%;height: 72px;
+}
+.djxysbbf img{
+    width: 45%;height: 100%;
+    margin-left: 5%;
+}
+.djxynro-2{
+    width: 100%;height: 133px;
+    float: left;
+}
+.djxyser-2{
+    width: 25%;height: 100%;float: left;
+    border: 0.5px solid #f5f5f5;
+    padding: 7px 7px 5px;overflow: hidden;
+}
+.djqlxr{
+    width: 100%;height: 42px;
+}
+.djqlxr strong{
+    color: rgb(0, 0, 0);letter-spacing: .58px;
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 2.225rem;
+    display: inline-block;
+    max-width: 100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.djqlxr p{
+    color: #666771;overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical; font-size: .6rem;
+    height: 2.00rem;margin-bottom: 5px;margin-top: -5px;
+}
+.djqlxrimg{
+    width: 66.5px;height: 66.5px;
+    float: left;margin-left:5px;margin-top: -10px; 
+}
+.djqlxrimg img{
+    height: 100%;width: 100%;
+}
+/* 第五部分 东家小院 END */
+/* 第六日部分 每日逛  */
+
+.Mairk{
+    width: 100%;height: 316px;
+    position: relative;
+}
+.Mairk-head{
+    width: 100%;height: 38.6px;
+    background: url(../imges/Mairkhead.dpg)no-repeat;
+    background-size: contain;
+}
+.Mairk-nro{
+    width: 94%;height: 266px;
+    background: white;border-radius: 12px;
+    margin-left:3%; overflow: hidden;
+}
+.Mairk-lck{
+    width: 25%;height: 50%;
+    padding: 7px 7px 5px;border: 0.5px solid #f5f5f5;
+    float: left;
+}
+.Mairk-lck-01{
+    width: 100%;height: 42px;
+}
+.Mairk-lck-01 strong{
+    letter-spacing: .58px;font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 2.125rem;
+    display: inline-block;
+    max-width: 100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.Mairk-lck-01 p{
+    color: #222222;overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;font-size: 1.3rem;
+    line-height: 1.825rem;
+    height: 2rem;margin: -10px 0 5px;
+}
+.Mairk-img{
+    width: 66px;height: 66px;
+    margin-left: 5px;
+}
+.Mairk-img img{
+    width: 100%;height: 100%;
+}
+/* 第六日部分 每日逛 END */
+/* 京东快报 */
+.JDkuib{
+    width: 100%;height: 33px;
+    position: relative;overflow: hidden;
+}
+.JDkuib-nro{
+    width: 94%;height: 100%;
+    margin-left: 3%;border-radius: 10px;
+    background: white;overflow: hidden;
+}
+.JDkuib-nro a{
+    width: 80.5px;height: 18px;display: block;
+    margin-left:7px;margin-top: 5px; float: left;
+}
+.JDkuib-nro a img{width: 100%;height:100%;}
+.JDkuib-xinw{
+    float: left;list-style: none;padding: 0;
+    vertical-align:baseline;margin: 0;position: absolute;
+    left: 25%;
+}
+.JDkuib-xinw li{
+    max-width: 250px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.JDkuib-xinw li a{
+    width: 30px;
+    color:rgb(250, 74, 74);
+}
+.JDkuib-xinw li p{
+    word-break:keep-all;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    padding-top: 5px;
+}
+#JDkbgdd{
+    position: absolute;
+    right: 20px;width: 40px;color: #181818;height: 30px;
+    top:-5px;padding:5px 5px ; 
+}
+/* .JDkuib-nro */
+/* 京东快报 END*/
+/* 第七部分 为你推荐 */
+
+.Wntjn{
+    width: 100%;
+    position: relative;margin-top: 10px;
+}
+.Wntjn-head{
+    width: 94%;height: 38.6px;
+    background: url(../imges/weinituijian.png)no-repeat;
+    background-size: contain;margin-left: 3%;
+}
+.Wntjn-nro{
+    width: 94%;margin-left: 3%;overflow: hidden;
+    background: white;
+}
+.Wntjn-Spin{
+    width: 50%;height: 285px;float: left;
+    border: 1.5px solid #f5f5f5;
+}
+.Wntjn-Spin-img{
+    width: 100%;height: 194px;overflow: hidden;
+}
+.Wntjn-Spin-img img{
+    width: 100%;height: auto;
+}
+.Wntjn-Spin-Jso{
+    box-sizing: border-box;
+    height: 31px;
+    font-size: 13px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    word-break: break-word;
+    color: #232326;
+    margin-top: 5px;
+    line-height: 16px;
+    margin-bottom: 3px;
+    padding: 0 4px;
+}
+.Wntjn-Spin-rx{
+    display: block;width: 100%;
+    height: 26px;list-style: none;
+    position: relative;
+}
+.pd-1{
+    color: #f23030;
+    display: inline-block;
+    padding: 0 5px 0 4px;
+    position: relative;
+    top: 1px;
+    height: 25px;
+    line-height: 25px;
+}
+.pd-22{    font-size: 16px;}
+.pd-pg{
+    border: 1px solid #e4393c;
+    color: #e4393c;
+    font-size: 14px;
+    padding: 0 0px;
+    margin-right: 5px;}
+.Kxsx{
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 8px;
+    text-align: center;
+    color: #686868;
+    font-size: 12px;
+    width: 49px;
+    height: 24px;
+    line-height: 25px;
+}
+.Kxsx:after{
+    content: "";
+    width: 200%;
+    height: 200%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 1px solid #bfbfbf;
+    border-radius: 4px;
+    -webkit-transform: scale(.5);
+    transform: scale(.5);
+    -webkit-transform-origin: top left;
+    transform-origin: top left;
+}
+/* 点击继续加载 */
+.Djizai{
+    width: 100%;height: 32px;
+    line-height: 32px;
+    font-size: 14px;cursor: pointer;
+    color: #7f7f7f;text-align: center;
+}
+.Djizai li{
+    list-style: none;
+}
+.Djizai-01{
+    display: block;
+}
+.Djizai-02{
+    display: none;
+}
+.Djizai-02 span{
+    animation: sc 1.5s linear infinite;
+}
+@keyframes sc{
+    0%{transform: rotateZ(0deg)}
+    100%{transform: rotateZ(360deg)}
+}
+/* 第七部分 为你推荐 END */
+/* 底部 footer */
+
+.Footer{
+    width: 100%;height: 228px;
+    background: rgb(255, 255, 255);
+}
+.Yonghuxs{
+    box-sizing: border-box;
+    border-bottom: 1px solid #e5e5e5;
+    border-top: 1px solid #e5e5e5;
+    padding: 17.68px 22px;list-style: none;
+}
+.Yonghuxs::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.Yonghuxs li{
+    float: left;
+    text-align: center;
+    width: 25%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    padding: 0 5px;
+    box-sizing: border-box;
+}
+.Yonghuxs li a{
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #848689;
+    font-size: 3.73333vw;
+    padding-top: 3px;text-decoration: none;
+}
+.Yonghuxs li:nth-child(-n+3) a:after {
+    content: "";
+    display: inline-block;
+    height: 70%;
+    width: 1px;
+    background-color: #d7d7d7;
+    position: absolute;
+    right: 0;
+    top: 15%;
+}
+.duogeBBzu{
+    border-bottom: 1px solid #e5e5e5;
+    padding: 1.06667vw 2vw;list-style: none;
+}
+.duogeBBzu::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.duogeBBzu li {
+    float: left;
+    text-align: center;
+    width: 33.3333%;
+}
+.duogeBBzu li a {
+    display: block;
+    width: 100%;
+    position: relative;
+}
+.duogeBBzu li a img{
+    width: 16vw;
+    vertical-align: middle;
+}
+.common-copyright {
+    text-align: center;
+    color: #848689;
+    font-size: 1.86667vw;
+    padding: 2vw 0;
+}
+/* 底部 footer END */
+/* 底部固定导航栏 */
+
+.GD-footer{
+    width: 100%;height: 55px;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 31;
+    box-sizing: border-box;
+    list-style: none;background-color: #fff;
+    box-shadow: 0 0 10px 0 hsla(0,6%,58%,.6);
+    -webkit-box-shadow: 0 0 10px 0 hsla(0,6%,58%,.6);
+    -moz-box-shadow: 0 0 10px 0 hsla(0,6%,58%,.6);
+    font-size: 16px;
+}
+.GD-footer::after{
+    content: "";
+    display: table;
+    height: 0;
+    clear: both;
+}
+#GD-footer-ron{
+    height: 13.33333vw;
+    position: relative;
+    box-sizing: border-box;
+    float: left;
+    font-size: 16px;
+    background-color: transparent;
+    text-align: center;
+}
+#GD-footer-ron img{
+    width: 4.3em;
+}
+/* 底部固定导航栏 END */
+/* 返回顶部 */
+#FHtop01{
+    display: none;
+    position: fixed;
+    bottom: 80px;
+    right: 9px;
+    width: 38px;
+    height: 38px;
+    background-image: url(../imges/fanhuidingbu001.png);
+    background-size: 38px 38px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    z-index: 20;
+}
+/* 返回顶部 END */

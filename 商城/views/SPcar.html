@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>bs引用</title>
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- 可选的 Bootstrap 主题文件（一般不用引入） -->
+    <link rel="stylesheet" href="./css/bootstrap-theme.min.css">
+    <!-- bs的js组件依赖于jq，所以我们要先引入jq -->
+    <script src="./js/jquery-3.2.1.min.js"></script>
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="./js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./css/shoping.css">
+    <script src="./js/Jd.JS"></script>
+    <script src="/js/details.js"></script>
+    <!-- 渲染 出弱智 -->
+    <script src="/js/element.js"></script>
+    <script src="/js/template-web.js"></script>
+</head>
+<!-- 头部标题 -->
+<div class="header">
+    <span class="turn"></span>
+    <span class="font">购物车</span>
+    <span class="right"></span>
+</div>
+<script>
+		// console.log(window.localStorage.getItem('nex'));
+        // var name = (window.localStorage.getItem('nex')); //接收用户名
+        // var rmb= window.localStorage.getItem('rmbx');
+        // var imgs=window.localStorage.getItem('imgsx');
+        // var colx= window.localStorage.getItem('colx');
+        // var cxxx= window.localStorage.getItem('cxxx');
+        // var vlxx=window.localStorage.getItem('vlxx');
+
+</script>
+<!-- 主题内容 -->
+<div class="main">
+    <!-- 空荡荡的购物车 -->
+    <div class="empty">
+        <img src="./images/5a93c51cN3bb5e37b.png" alt="">
+        <p>购物车空空如也，去逛逛吧~</p>
+    </div>
+    <!-- 购物车商品选择 -->
+    <div class="jdShop">
+        <!-- 地区编辑 -->
+        <div class="editor">
+            <i class="coordinates"></i>
+            <div class="region">广州市天河区</div>
+            <span class="choose">编辑商品</span>
+        </div>
+        <!-- 商品选择 -->
+        <div class="section">
+            
+
+        </div>
+    </div>
+    <script type="text/template" id="SPadd">
+      
+    <div class="head-warp">
+        <div class="OO">
+            <i class="round aaa " id="xx"></i>
+        </div>
+        <div class="head-title" <i class="jd"></i>
+            <!-- 商家名称 -->
+            <span class="jd-title">京东自营</span>
+        </div>
+    </div>
+    {{each list}}
+    <div class="selected">
+        <!-- 筛选商品 -->
+        <div class="items">
+            <i class="pich">
+                <div class="round dd "></div>
+            </i>
+            <img class="opq" src="{{$value.imgs}}">
+            <div class="content">
+                <!-- 商品名称 -->
+                <div class="name">
+                    <span class="mod">
+                        <img class="mod-img" src="./images/8fdfd2b2629dc278.png" alt="">
+                    </span>
+                    {{$value.name}}
+                </div>
+                <!-- 商品类型 -->
+                <div class="type">
+                    <div class="sku">
+                        {{$value.colx}}
+                        <i class="icon"></i>
+                    </div>
+                    <div class="service">
+                        {{$value.cxxx}}
+                        <i class="icon2"></i>
+                    </div>
+                </div>
+                <!-- 京东白条 -->
+                <div class="ious">
+                    <div class="white">
+                        白条6期免息
+                    </div>
+                </div>
+                <div class="price">
+                    <!-- 价钱 -->
+                    <div class="money">
+                        ￥<strong class="itn">{{$value.rmb}}</strong>.00
+                    </div>
+                    <div class="num-warp">
+                        <span class="subtract">一</span>
+                        <input type="tel" class="amount" value="{{$value.vlxx}}">
+                        <span class="add">十</span>
+                    </div>
+                </div>
+                <div class="m-action">
+                    <span class="pop">移入关注</span>
+                    <span class="pop">删除</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{/each}}
+    </script>
+    <p class="p">
+        <span class="befo"></span>
+        <span class="miao">
+            京东秒杀
+        </span>
+        <span class="after"></span>
+        <span class="tafter"></span>
+    </p>
+    <!-- 结算固定栏 -->
+    <div class="settlement">
+        <!-- 全选 -->
+        <div class="icon-sle">
+            全选
+            <i class="round ooo "></i>
+        </div>
+        <!-- 总价 -->
+        <div class="total">
+            <div class="tail">
+                <p class="sum">
+                    总价:
+                    <span class="sum-col">￥0.00</span>
+                </p>
+            </div>
+            <!-- 结算 -->
+            <div class="clo">
+                去结算
+                <span class="size"></span>
+            </div>
+        </div>
+        <!-- 删除收藏 -->
+        <div class="delete">
+            <div class="btn1  btn1-red">删除</div>
+            <div class="btn1">移入收藏</div>
+        </div>
+    </div>
+</div>
+
+<body>
+</body>
+
+</html>

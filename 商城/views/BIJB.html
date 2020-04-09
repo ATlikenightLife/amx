@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>游戏笔记本</title>
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+	<link rel="stylesheet" href="/css/bootstrap.min.css">
+
+	<!-- 可选的 Bootstrap 主题文件（一般不用引入） -->
+	<link rel="stylesheet" href="/css/bootstrap-theme.min.css">
+
+	<!-- bs的js组件依赖于jq，所以我们要先引入jq -->
+	<script src="/js/jquery-3.2.1.min.js"></script>
+
+	<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="/js/bootstrap.min.js"></script>
+    
+    <!-- 引入本地CSS -->
+    <link rel="stylesheet" href="/css/BIJB.css">
+</head>
+<body>
+    
+     <!-- 顶部固定搜索栏  -->
+     <div class="DBgdXXX">
+         <!-- 第一条 -->
+     <div class="DBgdshx">
+            <a href="/Fleng"class="FANx"><span class="glyphicon glyphicon-menu-left"></span></a>
+            <div class="DBgdshx-sx">
+                <form action="/BLJB" method="post">
+                    <i></i><input type="text" name="name" value maxlength="20" class="shouxkkk" cleardefault="no"autocomplete="off"placeholder="游戏本">
+                </form>
+            </div>
+            <div class="duoyu"><span></span></div>
+        </div>
+        <!-- 第二条 -->
+        <div class="DBgdshx-02">
+            <a href="javascript:;" class="DBgdshx-02-a" style="color:#e93b3d">
+                <span>综合<i class="glyphicon glyphicon-triangle-bottom"></i></span></a>
+                <a href="javascript:;" class="DBgdshx-02-a">
+                    <span>销量</span></a>
+                <a href="javascript:;" class="DBgdshx-02-a">
+                    <span>服务<i class="glyphicon glyphicon-triangle-bottom"></i></span></a>
+                <a href="javascript:;" class="DBgdshx-02-a">
+                    <span>筛选<i class="sxcxz"></i></span></a>
+        </div>
+        <!-- 第三条 -->
+        <div class="DBgdshx-03">
+            <ul class="DBgdshx-03-lu">
+                <div class="bonbdr"></div>
+                <li><a href="javascript:;">京东物流</a></li>
+                <li><a href="javascript:;">新品</a></li>
+                <li><a href="javascript:;">品牌</a></li>
+                <li><a href="javascript:;">拍拍二手</a></li>
+                <li><a href="javascript:;">显卡型号</a></li>
+                <li><a href="javascript:;">屏幕尺寸</a></li>
+                <li><a href="javascript:;">分类</a></li>
+                <li><a href="javascript:;">价格</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="DBgdshx-bg"></div>
+    <!-- 综合的弹框 -->
+    <div class="DBgdshx-02-TK">
+        <ul>
+            <li id="x-02-TK1">综合</li>
+            <li>最新上架</li>
+            <li>价格最低</li>
+            <li>价格最高</li>
+            <li>评价最多</li>
+        </ul>
+    </div>
+    <!-- 综合的弹框 END -->
+         <!-- 点击 多鸠余 显示显示框 -->
+    <ul class="duojyu"style="display:none;">
+            <li><a href="/"><span><img src="../imges/wuzi.png"></span><strong>首页</strong></a></li>
+            <li><a href="javascript:;"><span><img src="../imges/fenlengshousuo.png"></span><strong>分类搜索</strong></a></li>
+            <li><a href="javascript:;"><span><img src="../imges/gouwuccccccccccccccc.png"></span><strong>购物车</strong></a></li>
+            <li><a href="javascript:;"><span><img src="../imges/yonghulaodiao.png"></span><strong>我的京东</strong></a></li>
+            <li><a href="javascript:;"><span><img src="../imges/liulanjilvllllvvv.png"></span><strong>浏览记录</strong></a></li>
+        </ul>
+        <!-- 点击 多鸠余 显示显示框 END -->
+        <!-- 顶部固定搜索栏 END -->
+
+    <!-- 内容 -->
+    <div class="blj-nor">
+            {{#each data}}
+            <a href="/details/{{id}}"> <div class="blj-nor-xr">
+                    <img src="{{address}}">
+                    <span>{{name}}</span>
+                    <strong><em>￥<span>{{price}}</span></em></strong><br>
+                    <i>2300+条评论</i><br><li>玩家国度ROG官方旗舰店</li>
+            </div>
+        </a>
+        {{/each}}
+        <!-- <div class="blj-nor-xr">
+            <img src="../imges/bijbx2.jpg">
+            <span>戴尔DELL游匣G3 15.6英寸英特尔酷睿i5游戏笔记本电脑(i5-9300H 8G 512G GTX1650 4G 72色域 2年整机上门)</span>
+            <strong><em>￥<span>6099.00</span></em></strong><br>
+            <i>20万+条评论</i><br><li>戴尔京东自营官方旗舰店</li>
+        </div>
+        <div class="blj-nor-xr">
+            <img src="../imges/bijibenx3.jpg">
+            <span>戴尔DELL游匣G3 15.6英寸英特尔酷睿i7游戏笔记本电脑(i7-9750H 8G 512G GTX1660TiMQ 6G 2年整机上门)</span>
+            <strong><em>￥<span>7799.00</span></em></strong><br>
+            <i>7万+条评论</i><br><li>戴尔京东自营官方旗舰店</li>
+        </div>
+        <div class="blj-nor-xr">
+            <img src="../imges/bijibenx4.jpg">
+            <span>联想(Lenovo)拯救者Y7000P 2019英特尔酷睿i5 15.6英寸游戏笔记本电脑(i5-9300H 16G 1TSSD GTX1650 144Hz)</span>
+            <strong><em>￥<span>7299.00</span></em></strong><br>
+            <i>16万+条评论</i><br><li>联想电脑京东自营旗舰店</li>
+        </div>
+        <div class="blj-nor-xr">
+            <img src="../imges/bijiben7.webp">
+            <span>华硕(ASUS) 飞行堡垒7 九代英特尔酷睿i7 120Hz高速屏游戏笔记本电脑(i7-9750H 8G 512SSD GTX1650)金属电竞</span>
+            <strong><em>￥<span>6999.00</span></em></strong><br>
+            <i>7万+条评论</i><br><li>华硕京东自营官方旗舰店</li>
+        </div>
+        <div class="blj-nor-xr">
+            <img src="../imges/bijiben8.webp">
+            <span>惠普(HP)暗影精灵5 15.6英寸高色域游戏笔记本电脑(i5-9300H 8G 512GSSD GTX1650 4G独显)</span>
+            <strong><em>￥<span>6299.00</span></em></strong><br>
+            <i>10万+条评论</i><br><li>惠普京东自营官方旗舰店</li>
+        </div> -->
+    </div>
+    <!-- 内容 END -->
+        
+    
+    <!-- 点击切换样式 -->
+    <div class="CLI-qh CLI-qh-1"></div>
+    <!-- 点击切换样式 END -->
+    
+</body>
+<script src="/js/BIJB.js"></script>
+</html>

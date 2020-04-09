@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JD-分类</title>
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+	<link rel="stylesheet" href="/css/bootstrap.min.css">
+
+	<!-- 可选的 Bootstrap 主题文件（一般不用引入） -->
+	<link rel="stylesheet" href="/css/bootstrap-theme.min.css">
+
+	<!-- bs的js组件依赖于jq，所以我们要先引入jq -->
+	<script src="/js/jquery-3.2.1.min.js"></script>
+
+	<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="/js/bootstrap.min.js"></script>
+    <!-- 渲染 出弱智 -->
+    <script src="/js/element.js"></script>
+    <script src="/js/template-web.js"></script>
+
+    <!-- 引入本地css -->
+    <link rel="stylesheet" href="/css/JD-fleng.css">
+</head>
+<body>
+    <!-- 顶部固定搜索栏  -->
+    <div class="DBgdshx">
+        <a href="/"class="FANx"><span class="glyphicon glyphicon-menu-left"></span></a>
+        <div class="DBgdshx-sx">
+            <i></i>
+            <form action="/BLJB" method="post">
+            <input type="text" name="name" value maxlength="20" class="shouxkkk" cleardefault="no"autocomplete="off"placeholder="外星人笔记本">
+            </form>
+        </div>
+        <div class="duoyu"><span></span></div>
+    </div>
+    <!-- 点击 多鸠余 显示显示框 -->
+    <ul class="duojyu"style="display:none;">
+        <li><a href="/"><span><img src="../imges/wuzi.png"></span><strong>首页</strong></a></li>
+        <li><a href="javascript:;"><span><img src="../imges/fenlengshousuo.png"></span><strong>分类搜索</strong></a></li>
+        <li><a href="javascript:;"><span><img src="../imges/gouwuccccccccccccccc.png"></span><strong>购物车</strong></a></li>
+        <li><a href="javascript:;"><span><img src="../imges/yonghulaodiao.png"></span><strong>我的京东</strong></a></li>
+        <li><a href="/BIJB"><span><img src="../imges/liulanjilvllllvvv.png"></span><strong>浏览记录</strong></a></li>
+    </ul>
+    <!-- 点击 多鸠余 显示显示框 END -->
+    <!-- 顶部固定搜索栏 END -->
+    <!-- 套住 固定栏除外的内容 -->
+    <div class="main">   
+    <!-- 左边 TAB栏 -->
+    <div class="leftTab">
+        <ul class="leftTab-kx">
+            <li id="cur"><a href="javascript:;">热门推荐</a></li>
+            <li id=""><a href="javascript:;">手机数码</a></li>
+            <li id=""><a href="javascript:;">家用电器</a></li>
+            <li id=""><a href="javascript:;">电脑办公</a></li>
+            <li id=""><a href="javascript:;">美妆护肤</a></li>
+            <li id=""><a href="javascript:;">个护清洁</a></li>
+            <li id=""><a href="javascript:;">汽车生活</a></li>
+            <li id=""><a href="javascript:;">京东超市</a></li>
+            <li id=""><a href="javascript:;">男装</a></li>
+            <li id=""><a href="javascript:;">男鞋</a></li>
+            <li id=""><a href="javascript:;">女装</a></li>
+            <li id=""><a href="javascript:;">女鞋</a></li>
+            <li id=""><a href="javascript:;">母婴童装</a></li>
+            <li id=""><a href="javascript:;">图书音像</a></li>
+            <li id=""><a href="javascript:;">运动户外</a></li>
+            <li id=""><a href="javascript:;">内衣配饰</a></li>
+            <li id=""><a href="javascript:;">计生情趣</a></li>
+            <li id=""><a href="javascript:;">食品生鲜</a></li>
+            <li id=""><a href="javascript:;">酒水饮料</a></li>
+            <li id=""><a href="javascript:;">家具家装</a></li>
+            <li id=""><a href="javascript:;">家居橱具</a></li>
+            <li id=""><a href="javascript:;">箱包手袋</a></li>
+            <li id=""><a href="javascript:;">钟表珠宝</a></li>
+            <li id=""><a href="javascript:;">玩具乐器</a></li>
+            <li id=""><a href="javascript:;">医药保健</a></li>
+            <li id=""><a href="javascript:;">宠物生活</a></li>
+            <li id=""><a href="javascript:;">礼品鲜花</a></li>
+            <li id=""><a href="javascript:;">农资绿植</a></li>
+            <li id=""><a href="javascript:;">生活旅行</a></li>
+            <li id=""><a href="javascript:;">奢侈品</a></li>
+            <li id=""><a href="javascript:;">海囤全球</a></li>
+            <li id=""><a href="javascript:;">艺术邮币</a></li>
+            <li id=""><a href="javascript:;">特产馆</a></li>
+            <li id=""><a href="javascript:;">京东金融</a></li>
+            <li id=""><a href="javascript:;">国际名牌</a></li>
+            <li id=""><a href="javascript:;">拍卖</a></li>
+            <li id=""><a href="javascript:;">房产</a></li>
+            <li id=""><a href="javascript:;">工业品</a></li>
+        </ul>
+    </div>
+
+    <!-- 转换文本 -->
+    <!-- 右边的内容 -->
+    <div class="right-ron">
+        <!-- 第一页 -->
+        
+        <ul style="display:block;">
+            <h4>热门分类</h4>
+            <a href="javascript:;" class="right-ron-Phag">
+                <i class="right-ron-Phag-i1"></i><span>排行榜</span>
+                <i class="right-ron-Phag-i2"></i></a><br>
+                <!-- 热门分类 -->
+                <div class="list"></div>
+                <h4 style="margin-top: 25px;">家电热搜</h4><br>
+                <!-- 家电热搜 -->
+                <div class="list2"></div>
+                
+        </ul>
+        
+        <!-- 第二页 -->
+        <ul style="display: none;">
+                <h4>热门品牌</h4><br>
+                <!-- 热门品牌 -->
+                <div class="list3"></div>
+
+                <h4 style="margin-top: 25px;">手机通讯</h4><br>
+                <!-- 手机通讯 -->
+                <div class="list4"></div>
+
+                <h4 style="margin-top: 25px;">运营商</h4><br>
+                <!-- 运营商 -->
+                <div class="list5"></div>
+        </ul>
+        
+        <!-- 第三页 -->
+        <ul style="display: none;">
+                <h4>厨房小电</h4><br>
+                <!-- 家用电器 厨房小电 -->
+                <div class="list6"></div>
+                
+                <h4 style="margin-top: 25px;width: 100%;">个护健康</h4><br>
+                <!-- 家用电器 个护健康 -->
+                <div class="list7"></div>
+                  
+        
+        </ul>
+        <!-- 第三页  END-->
+        <!-- 电脑办公页 -->
+        <ul style="display: none;">
+                <h4>热卖分类</h4><br>
+                <!-- 电脑办公 热卖分类 -->
+                <div class="list8"></div>
+                <h4 style="margin-top: 25px;">电脑整机</h4><br>
+                <!-- 电脑办公 电脑整机 -->
+                <div class="list9"></div>
+        </ul>
+        <!-- 第五页 -->
+        <ul style="display: none;">
+                <h4>当季推荐</h4><br>
+                <li><a href="javascript:;"><img src="../imges/meibai.jpg"><span> &nbsp&nbsp美白</span></a></li>
+                <li><a href="javascript:;"><img src="../imges/meibai.jpg"><span> &nbsp&nbsp美白</span></a></li>
+                <li><a href="javascript:;"><img src="../imges/meibai.jpg"><span> &nbsp&nbsp美白</span></a></li>
+                <h4 style="margin-top: 25px;">拔草推荐</h4><br>
+                <li><a href="javascript:;"><img src="../imges/xianbaikouh.jpg"><span style="padding-left: 23%;">显白口红</span></a></li>
+                <li><a href="javascript:;"><img src="../imges/xianbaikouh.jpg"><span style="padding-left: 23%;">显白口红</span></a></li>
+                <li><a href="javascript:;"><img src="../imges/xianbaikouh.jpg"><span style="padding-left: 23%;">显白口红</span></a></li>
+                <h4 style="margin-top: 25px;">潮流速递</h4><br>
+                <li><a href="javascript:;"><img src="../imges/xinpinsudu.jpg"><span style="padding-left: 23%;">新品速递</span></a></li>
+                <li><a href="javascript:;"><img src="../imges/xinpinsudu.jpg"><span style="padding-left: 23%;">新品速递</span></a></li>
+                <li><a href="javascript:;"><img src="../imges/xinpinsudu.jpg"><span style="padding-left: 23%;">新品速递</span></a></li>
+                <h4 style="margin-top: 25px;">面部护肤</h4><br>
+                <li><a href="javascript:;"><img src="../imges/shenchenqijie.jpg"><span style="padding-left: 23%;">深层清洁</span></a></li>
+                <li><a href="javascript:;"><img src="../imges/shenchenqijie.jpg"><span style="padding-left: 23%;">深层清洁</span></a></li>
+                <li><a href="javascript:;"><img src="../imges/shangfushui.jpg"><span  style="padding-left: 10%;">爽肤水/化妆水</span></a></li>
+                <li><a href="javascript:;"><img src="../imges/shangfushui.jpg"><span  style="padding-left: 10%;">爽肤水/化妆水</span></a></li>
+                <li><a href="javascript:;"><img src="../imges/shuimianmianm.jpg"><span style="padding-left: 23%;">睡眠面膜</span></a></li>
+                <li><a href="javascript:;"><img src="../imges/shuimianmianm.jpg"><span style="padding-left: 23%;">睡眠面膜</span></a></li>
+            </ul>
+        <!-- 第五页 END -->
+    </div>
+    <!-- 热门分类 -->
+    <script type="text/template" id="indexTpl">
+        {{each list}}
+        <li><a href="javascript:;"><img src="{{$value.address}}"><span>{{$value.name}}</span></a></li>
+       {{/each}}
+    </script>
+    <!-- 家电热搜 -->
+    <script type="text/template" id="indexTpl2">
+        {{each list}}
+        <li><a href="javascript:;"><img src="{{$value.address}}"><span>{{$value.name}}</span></a></li>
+       {{/each}}
+    </script>
+    <!-- 热门品牌 -->
+    <script type="text/template" id="indexTpl3">
+        {{each list}}
+        <li><a href="javascript:;"><img src="{{$value.address}}"><span>{{$value.name}}</span></a></li>
+       {{/each}}
+    </script>
+    <!-- 手机通讯 -->
+    <script type="text/template" id="indexTpl4">
+        {{each list}}
+        <li><a href="javascript:;"><img src="{{$value.address}}"><span>{{$value.name}}</span></a></li>
+       {{/each}}
+    </script>
+    <!-- 运营商 -->
+    <script type="text/template" id="indexTpl5">
+        {{each list}}
+        <li><a href="javascript:;"><img src="{{$value.address}}"><span>{{$value.name}}</span></a></li>
+       {{/each}}
+    </script>
+    
+
+    <!-- 家用电器 厨房小电 -->
+    <script type="text/template" id="indexTpl6">
+        {{each list}}
+        <li><a href="javascript:;"><img src="{{$value.address}}"><span>{{$value.name}}</span></a></li>
+       {{/each}}
+    </script>
+    <!-- 家用电器 个护健康-->
+    <script type="text/template" id="indexTpl7">
+        {{each list}}
+        <li><a href="javascript:;"><img src="{{$value.address}}"><span>{{$value.name}}</span></a></li>
+       {{/each}}
+    </script>
+
+
+    <!-- 电脑办公 热卖分类-->
+    <script type="text/template" id="indexTpl8">
+        {{each list}}
+        <li><a href="javascript:;"><img src="{{$value.address}}"><span>{{$value.name}}</span></a></li>
+       {{/each}}
+    </script>
+    <!-- 电脑办公 电脑整机-->
+    <script type="text/template" id="indexTpl9">
+        {{each list}}
+        <li><a href="javascript:;"><img src="{{$value.address}}"><span>{{$value.name}}</span></a></li>
+       {{/each}}
+    </script>
+
+
+    <!-- 右边的内容 END -->
+
+    </div>
+
+    <!-- 套住 固定栏除外的内容 END -->
+    
+    
+
+    <!-- 左边 TAB栏 END-->
+
+     <!-- 底部固定导航栏 -->
+     <div class="GD-footer">
+            <a href="/"style="width:20%"id='GD-footer-ron'><img src="../imges/shouye02.png"></a>
+            <a href="javascript:;"style="width:20%"id='GD-footer-ron'><img src="../imges/fenlei01.png"></a>
+            <a href="javascript:;"style="width:20%"id='GD-footer-ron'><img src="../imges/jingxi02.png"></a>
+            <a href="/SPcar"style="width:20%"id='GD-footer-ron'><img src="../imges/gouwuche.png"></a>
+            <a href="/admin"style="width:20%"id='GD-footer-ron'><img src="./imges/mydeyh.png"></a>
+        </div>
+</body>
+<script src="/js/Fleng.js"></script>
+</html>

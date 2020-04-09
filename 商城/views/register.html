@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>注册页面</title>
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <!-- 可选的 Bootstrap 主题文件（一般不用引入） -->
+    <link rel="stylesheet" href="/css/bootstrap-theme.min.css">
+
+    <!-- bs的js组件依赖于jq，所以我们要先引入jq -->
+    <script src="/js/jquery-3.2.1.min.js"></script>
+
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="/js/bootstrap.min.js"></script>
+    <!-- 引入js -->
+    <script src="/js/register.js"></script>
+    <!-- 引入css -->
+    <link rel="stylesheet" href="/css/register.css">
+</head>
+<style>
+    a {
+        text-decoration: none;
+    }
+
+    a:visited {
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: none;
+    }
+
+    a:active {
+        text-decoration: none;
+    }
+
+    a:link {
+        text-decoration: none;
+    }
+
+    input:-moz-placeholder,
+    textarea:-moz-placeholder {
+        color: #999;
+    }
+
+    input:-ms-input-placeholder,
+    textarea:-ms-input-placeholder {
+        color: #999;
+    }
+
+    input::-webkit-input-placeholder,
+    textarea::-webkit-input-placeholder {
+        color: #999;
+    }
+
+    .fuck {
+        font-size: 12px;
+        color: red;
+    }
+
+</style>
+
+<body>
+    <div class="both">
+        <div class="bothbar">
+            <!-- 内容区 -->
+            <div class="messagebar">
+                <!-- header -->
+                <div class="header">
+                    <a href="/login"><span class="icon-back"></span></a>
+                    <span class="text-head">京东注册</span>
+                </div>
+                <!-- 表单部分内容 -->
+                <form id="reform" onsubmit="return eg.regCheck();">
+                    <div class="mesc">
+                        <P class="inputc">
+                        <input name="username" placeholder="用户名/邮箱/手机号" type="text" class="iphone" id="urname">
+                            <i class="iconclear" id="x1"></i>
+                        </P>
+                        <span id="usr" class="fuck"></span>
+                        <P class="inputc">
+                            <input name="password" placeholder="请输入密码" type="password" class="iphone" id="password">
+                            <i class="iconcleart" id="x2"></i>
+                        </P>
+                        <span id="pwd" class="fuck"></span>
+                        <P class="inputc">
+                            <input name="repass" placeholder="请再次输入密码" type="password" class="iphone" id="password2">
+                            <i class="iconcleart" id="x3"></i>
+                        </P>
+                        <span id="pwd2" class="fuck"></span>
+                    </div>
+
+                    <!-- 注册按钮 -->
+                    <input type="button" class="git" id="app" value="注 册">
+
+                </form>
+                <!-- 注册正则匹配 -->
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

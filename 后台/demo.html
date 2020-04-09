@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <style type="text/css">
+  
+    </style>
+    <script src="http://lib.sinaapp.com/js/jquery/1.7.2/jquery.min.js"></script>
+   <script>
+       $(function(){
+$("#test a").each(function(){
+    //  获取/s/后面的url如 xiamen/asdfasdg
+    var str1=$(this).attr("href").substr($(this).attr("href").indexOf("/s/")+4)
+    //获取"/"之前的数据
+    str2=str1.substring(0,str1.indexOf("/"));
+    alert(str2)
+})
+       })
+       var p = 9;
+       var i = 2;
+       if(p - i >3){
+           console.log('出来了')
+       }
+   </script>
+  
+</head>
+<body>
+<ul id="test">
+    <li><a href="/s/xiamen/asdfasdg">厦门</a></li>
+    <li><a href="/s/guangzhou/ajrtertrrrg">广州</a></li>
+    <li><a href="/s/nanjing/bbswrwer">南京</a></li>
+</ul>
+  
+</body>
+</html>
